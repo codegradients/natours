@@ -1,4 +1,4 @@
-require("dotenv").config({ path: "./config.env" });
+require("dotenv").config({ path: "./.env" });
 
 process.on("uncaughtException", (err) => {
   // eslint-disable-next-line no-console
