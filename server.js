@@ -27,7 +27,7 @@ mongoose
     // useFindAndModify: false,
   })
   // eslint-disable-next-line no-console
-  .then(() => console.log("DB Connection SuccessFul! Sulamn Cluster"));
+  .then(() => console.log("DB Connection SuccessFul! Natours Production DB"));
 
 // Server
 const port = process.env.PORT || 3000;

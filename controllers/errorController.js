@@ -40,7 +40,7 @@ const sendErrorDev = (err, req, res) => {
 
   // B) Render Website
   // eslint-disable-next-line no-console
-  console.log("Error 💥", err);
+  console.error("Error 💥", err);
   return res.status(err.statusCode).render("error", {
     title: "Something went wrong",
     msg: err,

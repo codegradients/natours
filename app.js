@@ -7,6 +7,8 @@ const mongoSanitize = require("express-mongo-sanitize");
 const hpp = require("hpp");
 // eslint-disable-next-line import/no-extraneous-dependencies
 const cookieParser = require("cookie-parser");
+// eslint-disable-next-line import/no-extraneous-dependencies
+const compression = require("compression");
 
 const AppError = require("./utils/appError");
 const globalErrorHandler = require("./controllers/errorController");
@@ -67,6 +69,8 @@ app.use(
     ],
   }),
 );
+
+app.use(compression());
 
 // Test Middleware
 app.use((req, res, next) => {
