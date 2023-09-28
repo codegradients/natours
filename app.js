@@ -4,12 +4,9 @@ const morgan = require("morgan");
 const { rateLimit } = require("express-rate-limit");
 const helmet = require("helmet");
 const mongoSanitize = require("express-mongo-sanitize");
-// eslint-disable-next-line import/no-extraneous-dependencies
 const xss = require("xss-clean");
 const hpp = require("hpp");
-// eslint-disable-next-line import/no-extraneous-dependencies
 const cookieParser = require("cookie-parser");
-// eslint-disable-next-line import/no-extraneous-dependencies
 const compression = require("compression");
 
 const AppError = require("./utils/appError");
